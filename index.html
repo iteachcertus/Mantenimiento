@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" >
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mantenimiento de un Producto - CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script type="text/javascript"  src="js/crud.js"  ></script>
+</head>
+
+<body>
+        <div class="pagina">
+            <div class="cabecera-pagina">
+                <span>Detalle del mantenimiento de producto</span>
+            </div>
+            <div class="contenido-pagina">
+                
+                <div class="contenido">
+                
+                    <div class="row">
+                
+                        <div class="col-md-8">
+                            
+                                   <div class="card">
+                                        <div class="card-body">
+                                               <div class="card-heading">
+                                                    <span>Ver registros del Producto</span>
+                                               </div> 
+                                               <div class="card-content">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">N°</th>
+                                                                <th scope="col">ID</th>
+                                                                <th scope="col">Nombre</th>
+                                                                <th scope="col">Precio</th>
+                                                                <th scope="col">Editar</th>
+                                                                <th scope="col">Borrar</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="generarTablaDatos" ></tbody>
+                                                    </table>
+
+                                               </div>
+                                        </div>
+
+
+
+
+                                   </div>
+                                   
+                                   
+                        </div>
+                        <div class="col-md-4">
+                            
+                            <div class="card special-form-card">
+                                 <div class="card-body">
+                                    <span id="crear-producto">Crear producto</span>
+                                    <span id="editar-producto">Editar producto</span>   
+                                 </div>
+
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                      <input type="text" 
+                                             class="form-control"  
+                                             id="idProducto" 
+                                             placeholder="Ingresar el código" />  
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" 
+                                             class="form-control"  
+                                             id="nombreProducto" 
+                                             placeholder="Ingresar el nombre" />  
+                                </div>
+                                <div class="form-group">
+                                    <input  type="number"
+                                             class="form-control"  
+                                             id="precioProducto" 
+                                             placeholder="Ingresar el precio" />  
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button id="btnCrearProducto" type="submit" onclick="registrarProducto();" class="btn btn-sucess">Registrar</button>
+                                <button id="btnEditarProducto" type="submit" onclick="editarProducto();" class="btn btn-info" >Editar</button>
+                                <button id="btnEliminarProducto" type="submit" onclick="eliminarProducto();" class="btn btn-danger">Eliminar</button>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

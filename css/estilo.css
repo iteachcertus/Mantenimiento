@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f8f7;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.pagina .cabecera-pagina{
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.pagina .contenido-pagina{
+    width: 100%;
+}
+
+.pagina .contenido-pagina .card .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.pagina .contenido-pagina .card .card-body .card-heading{
+    font-size: 24px;
+    line-height: 0.5;
+    font-weight: 650;
+    color: #06e8f0;
+    margin-bottom: 20px;   
+}
+
+.special-form-card{
+    max-height: 230px !important;
+}
+
+.form-actions{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
